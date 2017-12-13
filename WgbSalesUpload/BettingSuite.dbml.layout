@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23, 59.125" name="BettingSuite">
+  <DataContextMoniker Name="/BettingSuiteDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a8e109f8-c320-4dae-bc37-c9bb106fab63" absoluteBounds="20.75, 43.875, 2, 5.2323225911458309">
+      <DataClassMoniker Name="/BettingSuiteDataContext/admin_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dc79531-b600-4fc0-a663-e2c5931037fb" absoluteBounds="20.765, 44.335, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52ae4ee0-6e36-4696-b0bc-24856a99ff90" absoluteBounds="3.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/BettingSuiteDataContext/application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4fae48e2-aae0-4ee1-ab74-d40deaf390c6" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="627bd3dc-5ee1-4773-8c44-1364d21d32a0" absoluteBounds="12, 51.5, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/bank" />
+      <nestedChildShapes>
+        <elementListCompartment Id="329f92d2-51f6-40aa-9846-7cc0265a894e" absoluteBounds="12.015, 51.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a456b23-5b63-43a8-a4fd-469ff69bae49" absoluteBounds="15, 50.25, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/bank_list" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9bedf95-c483-4a65-890c-79bd3dafbcee" absoluteBounds="15.015, 50.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93c82384-a8ab-4ee8-a5be-71fddd396863" absoluteBounds="3.75, 2.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/BettingSuiteDataContext/banner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f138217-8004-479e-b1f8-207f25fe0979" absoluteBounds="3.765, 3.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b419f12-8607-440c-811b-de444975d4b8" absoluteBounds="9, 35.25, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/commission_balance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d625f9fb-afd5-4228-9b32-8bd95ea58c3f" absoluteBounds="9.015, 35.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b42aeab-c033-4072-ad8b-0af0328cf4b5" absoluteBounds="14.75, 41.875, 2, 3.8862125651041737">
+      <DataClassMoniker Name="/BettingSuiteDataContext/commission_lodgement_reimbursment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="553276c2-5a70-43dc-8009-4392b9b9bc52" absoluteBounds="14.765, 42.335, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8f702ff-b274-4039-b036-56a00f101642" absoluteBounds="12, 41.5, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/commission_transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87bcd152-61f2-4907-8363-9076191d1e56" absoluteBounds="12.015, 41.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="142f88a2-6d04-4045-a49f-864436b3eaef" absoluteBounds="15, 19.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/credit_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ca82724-2479-4699-a06f-b01c031f6a2a" absoluteBounds="15.015, 19.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45bba7e3-daa8-4b7a-8d0d-e73ab6f91d25" absoluteBounds="6.25, 23.25, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/BettingSuiteDataContext/debt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9652772e-52be-48a3-9e5e-819407876291" absoluteBounds="6.265, 23.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3460da82-7d76-449e-8018-c0dcf814a375" absoluteBounds="3.5, 22.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/debt_installment_duration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f07f3df2-8bfd-4d24-a88d-56b4251bdcd1" absoluteBounds="3.515, 23.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cd72acd-fdd1-4838-ace6-840a18ec3eab" absoluteBounds="18.75, 19.5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/debt_lodgement_reimbursment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9a09ec7-e3f9-44b5-8da9-494843a120d1" absoluteBounds="18.765, 19.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9918ef9b-52d3-4089-a73a-033acf7a8d82" absoluteBounds="9, 23.375, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/debt_transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1817a925-d97a-4396-895e-a7ad129b957e" absoluteBounds="9.015, 23.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d9923ed-b55c-43f3-aa66-b5ea53e21cf4" absoluteBounds="3.5, 25, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/BettingSuiteDataContext/debt_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25f1b161-33fe-4504-b0a8-034433e23ce9" absoluteBounds="3.515, 25.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b32db63-213e-45a1-9c9e-12da3bc214d7" absoluteBounds="9.25, 28.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/expenses_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1896933-7757-4a8d-a7eb-0668932a1a55" absoluteBounds="9.265, 28.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83734981-f55a-4d18-bc67-5b31809e9573" absoluteBounds="12.5, 22.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/Item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="127f011f-191a-4a75-aa48-26ca35eb5319" absoluteBounds="12.515, 22.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" absoluteBounds="3.5, 41.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BettingSuiteDataContext/login" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed1ee177-37c1-408d-a4df-7c97f700f301" absoluteBounds="3.515, 41.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f074362a-9c65-4dc4-a9ad-0fface3a73a2" absoluteBounds="6.25, 41.875, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/login_log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9660d282-2ca8-470a-be29-e4302bb81752" absoluteBounds="6.265, 42.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6329ade-63f0-437f-882d-f6fa01c4ff88" absoluteBounds="0.75, 41.375, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/loginrole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be2bfff6-e1ce-43e3-a754-a4cc5c77d063" absoluteBounds="0.765, 41.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f76f6c3-3fa2-40dc-866c-80b8ba568b1b" absoluteBounds="0.75, 5.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/loginroleaccess" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7412eb97-ca10-4479-9676-834950f56a09" absoluteBounds="0.765, 6.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12f2bbb5-6b77-4165-bf6e-a3a577ac2c40" absoluteBounds="3.75, 5.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BettingSuiteDataContext/mail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bf9dfba-9107-468a-809a-ac7bd47d3414" absoluteBounds="3.765, 6.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d671c0b-ab63-4840-8f83-09ba5a63010e" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/BettingSuiteDataContext/mail_validity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0235805d-28fe-4290-87c1-9c86a0e5383d" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eecf2af2-66d5-450d-bab6-04cc1367c06b" absoluteBounds="9, 37.625, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_balance_sheet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baa62da6-04da-46d8-aea3-ca92ebc50623" absoluteBounds="9.015, 38.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b44ab60a-f387-4324-a064-ca384d3b9c2a" absoluteBounds="17.75, 24.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_credit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3655bd3c-5beb-4085-bcfe-7123fad032fc" absoluteBounds="17.765, 25.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d794e166-2b4f-428d-9946-6b07c49492ed" absoluteBounds="12, 27.75, 2, 4.463116861979163">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_daily_sale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1e635be-7950-4e41-baba-b9251b40c330" absoluteBounds="12.015, 28.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8851e44-5e0d-454d-9b69-cf95c0bfbc7b" absoluteBounds="14.75, 27.125, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_daily_sales_virtual" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73c1b6e7-d62f-4f26-9e67-03f40b4ef2f5" absoluteBounds="14.765, 27.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b26e1d1-c1d5-4898-a284-baa96f6ab268" absoluteBounds="12, 37.625, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_expense" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22100dfa-690e-4b57-b2e1-9d61be13dc3d" absoluteBounds="12.015, 38.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7adae979-e0e5-44a4-82ae-4552aa9f50d0" absoluteBounds="14.75, 32.25, 2, 3.8862125651041737">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_lodgement_reimbursment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00cdf258-ea79-4f40-b55a-c66ad7c02ab6" absoluteBounds="14.765, 32.71, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38648399-48a1-4d22-8862-846fc375e0ad" absoluteBounds="12, 45.75, 2, 4.4631168619791595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_luckyballs_sale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="688950af-ec0c-4300-ac65-51da0e06dbda" absoluteBounds="12.015, 46.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64d4175a-1807-4210-9a55-927b0886e28a" absoluteBounds="18, 36.75, 2, 4.4631168619791595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_sb_sale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5954e0c-1715-4c3d-88e6-1331228c2885" absoluteBounds="18.015, 37.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ef2ea0d-ae0d-431f-a4d9-9e20f232e8f2" absoluteBounds="9, 31.5, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/master_transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a2dd51f-eb11-4476-9b42-23b5f857f96c" absoluteBounds="9.015, 31.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc2f5a19-c31d-42b7-a6d3-b15840ebaab8" absoluteBounds="6.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a38c31aa-6abe-496c-8c6d-9ed46ff0c6f1" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f369e0c-d4f1-4b66-a13c-61e4c2e30199" absoluteBounds="6.75, 6.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/BettingSuiteDataContext/payment_request" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f40627dd-a238-4bd3-90fb-4894c8b671ec" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="884ebe77-dc70-4ec0-8b7b-c187756da1d9" absoluteBounds="12, 19, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/BettingSuiteDataContext/payment_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="913f796e-388b-41a0-aeea-eeebac0a747a" absoluteBounds="12.015, 19.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d7370030-f83e-4c68-8806-9f402f6cf26d" absoluteBounds="15.25, 22, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/PaymentItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8b7861d-fcf7-40be-8767-c102f8235a07" absoluteBounds="15.265, 22.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b85a7a0-f3c5-4885-8730-a4bdadd69764" absoluteBounds="18, 28, 2, 7.924542643229163">
+      <DataClassMoniker Name="/BettingSuiteDataContext/PaymentNotificationRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4988099d-80ad-49c4-aa94-4c6a48670a2d" absoluteBounds="18.015, 28.46, 1.9700000000000002, 7.3645426432291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="73a37d93-e4a8-443d-b5e8-d10fde313db0" absoluteBounds="0.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/BettingSuiteDataContext/report" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86cf694a-f953-470c-a1bb-4f01399eb44c" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3098dd3e-f14b-411b-ad53-1534828dc0b8" absoluteBounds="0.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/sales_cal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="887e6188-0191-4397-bad7-2f51a1434f7b" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" absoluteBounds="6.25, 37, 2, 3.8862125651041595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30ed0035-98c5-4814-ba75-5d509d169dec" absoluteBounds="6.265, 37.46, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6dfb953b-4505-4abd-858a-a7caf09cca6b" absoluteBounds="9, 40.5, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_balance_sheet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc95a608-621a-4549-8796-891ec06bdcbd" absoluteBounds="9.015, 40.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ece6645-a48d-4ae3-a9e5-26957d261abc" absoluteBounds="14.75, 46.875, 2, 2.1554996744791595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_credit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d07aae79-f38d-4917-a9b8-22c579ab636e" absoluteBounds="14.765, 47.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="047778a2-991b-4d3d-b370-e2d3d81bc781" absoluteBounds="15, 37.125, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_daily_sale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="227b6198-324e-456e-81a8-54ff461a9ee3" absoluteBounds="15.015, 37.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="831e29c2-a2a0-4d28-a7da-bb7d8a063a8c" absoluteBounds="12.25, 55.125, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_daily_sales_virtual" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0db0fe0-dd39-4af2-9021-90150cd5ccf9" absoluteBounds="12.265, 55.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c96c9080-acaa-4042-b899-ec6b95e263d1" absoluteBounds="12, 33.625, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_expense" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ebebefa-48a3-4e90-a2b5-a80ebeedc69c" absoluteBounds="12.015, 34.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6826a62-6025-4da6-9c5b-8f1ac7ee509b" absoluteBounds="17.75, 43.25, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_lodgement_reimbursment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49ba89f0-6e69-41be-bfc5-4f09546facbe" absoluteBounds="17.765, 43.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3eecabb1-988c-4c2e-9070-119d5ee09fa0" absoluteBounds="9, 43.5, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f25ffc5-70bd-4bf9-a564-137554723274" absoluteBounds="9.015, 43.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3072ab9-d657-4a69-8cba-74d8b06a6eb2" absoluteBounds="3.5, 36, 2, 1.5785953776041595">
+      <DataClassMoniker Name="/BettingSuiteDataContext/shop_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="376a8083-0259-447c-953d-f7dfe083dd38" absoluteBounds="3.515, 36.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3f5aefb-c613-4a42-ac41-f1b326c69ae8" absoluteBounds="9.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/sm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2c7c093-f9ee-4be9-8ed3-efa22a33eb3c" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45fa9e32-d882-4cd5-95dd-a403221e5004" absoluteBounds="9.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BettingSuiteDataContext/sms_vendor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29538cd5-fceb-42b9-9eb2-690908373725" absoluteBounds="9.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e21363aa-f6b7-488b-8420-530952f08450" absoluteBounds="0.75, 38.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/state_list" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5f4158b-f564-4aca-8c1f-61dc0843fa37" absoluteBounds="0.765, 38.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66c5926e-d69a-4548-847a-65307e7ae711" absoluteBounds="3.5, 38.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/state_local_govt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba5247fd-1662-47b5-9714-40490a848bb0" absoluteBounds="3.515, 38.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5cbead14-d61e-4f7b-9aa8-036850dabc5a" absoluteBounds="6.25, 32, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/transaction_category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f5ec3ea-a281-4c90-ba6f-3979aacc7f7d" absoluteBounds="6.265, 32.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc7cc32d-6b66-4bea-9967-9c0fbfa92d90" absoluteBounds="12, 24.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BettingSuiteDataContext/transaction_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ccf11a26-3527-46cd-9177-6d7ea227920b" absoluteBounds="12.015, 25.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(21.4592307692308 : 49.1073225911458); (21.4592307692308 : 49.3573225911458); (22.0546153846154 : 49.3573225911458); (22.0546153846154 : 49.1073225911458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BettingSuiteDataContext/admin_user/admin_user_admin_user" />
+      <nodes>
+        <classShapeMoniker Id="a8e109f8-c320-4dae-bc37-c9bb106fab63" />
+        <classShapeMoniker Id="a8e109f8-c320-4dae-bc37-c9bb106fab63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 51.0392976888021); (18.6666666666667 : 51.0392976888021 : JumpStart); (18.8333333333333 : 51.0392976888021 : JumpEnd); (21.0733628846154 : 51.0392976888021); (21.0733628846154 : 49.1073225911458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/bank_list/bank_list_admin_user" />
+      <nodes>
+        <classShapeMoniker Id="1a456b23-5b63-43a8-a4fd-469ff69bae49" />
+        <classShapeMoniker Id="a8e109f8-c320-4dae-bc37-c9bb106fab63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 51.5966487596154); (14.1285744349011 : 51.4680743247143 : JumpStart); (14.2464255650989 : 51.3502231945165 : JumpEnd); (14.4375 : 51.1591487596154); (14.4375 : 43.8181062825521); (14.75 : 43.8181062825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/bank/bank_commission_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="627bd3dc-5ee1-4773-8c44-1364d21d32a0" />
+        <classShapeMoniker Id="8b42aeab-c033-4072-ad8b-0af0328cf4b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 42.784053141276); (14.0416666666667 : 42.784053141276 : JumpStart); (14.2708333333333 : 42.784053141276 : JumpEnd); (14.2916666666667 : 42.784053141276 : JumpStart); (14.4895833333333 : 42.784053141276 : JumpEnd); (14.75 : 42.784053141276)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/commission_transaction/commission_transaction_commission_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="f8f702ff-b274-4039-b036-56a00f101642" />
+        <classShapeMoniker Id="8b42aeab-c033-4072-ad8b-0af0328cf4b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 23.7267976888021); (6.25 : 23.7267976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/debt_installment_duration/debt_installment_duration_debt" />
+      <nodes>
+        <classShapeMoniker Id="3460da82-7d76-449e-8018-c0dcf814a375" />
+        <classShapeMoniker Id="45bba7e3-daa8-4b7a-8d0d-e73ab6f91d25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 24.4190991210938); (14.5416666666667 : 24.4190991210938 : JumpStart); (14.9583333333333 : 24.4190991210938 : JumpEnd); (15.0104166666667 : 24.4190991210938 : JumpStart); (15.1770833333333 : 24.4190991210938 : JumpEnd); (16.9479166666667 : 24.4190991210938 : JumpStart); (17.1145833333333 : 24.4190991210938 : JumpEnd); (19.4010396666667 : 24.4190991210938 : JumpStart); (19.5677063333333 : 24.4190991210938 : JumpEnd); (20.28125 : 24.4190991210938); (20.28125 : 23.3862125651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/debt_transaction/debt_transaction_debt_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="9918ef9b-52d3-4089-a73a-033acf7a8d82" />
+        <classShapeMoniker Id="4cd72acd-fdd1-4838-ace6-840a18ec3eab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 25.0296541341146); (8.54166666666667 : 25.0296541341146 : JumpStart); (8.70833333333333 : 25.0296541341146 : JumpEnd); (9 : 25.0296541341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/debt/debt_debt_transaction" />
+      <nodes>
+        <classShapeMoniker Id="45bba7e3-daa8-4b7a-8d0d-e73ab6f91d25" />
+        <classShapeMoniker Id="9918ef9b-52d3-4089-a73a-033acf7a8d82" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 25.8758048502604); (6.25 : 25.8758048502604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/debt_type/debt_type_debt" />
+      <nodes>
+        <classShapeMoniker Id="4d9923ed-b55c-43f3-aa66-b5ea53e21cf4" />
+        <classShapeMoniker Id="45bba7e3-daa8-4b7a-8d0d-e73ab6f91d25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 43.0208968098958); (4.5 : 46.8670068359375); (4.94791916666667 : 46.8670068359375 : JumpStart); (5.11458583333333 : 46.8670068359375 : JumpEnd); (8.57291666666667 : 46.8670068359375 : JumpStart); (8.73958333333333 : 46.8670068359375 : JumpEnd); (11.75 : 46.8670068359375); (11.75 : 45.5); (14.0416666666667 : 45.5 : JumpStart); (14.2708333333333 : 45.5 : JumpEnd); (14.2916666666667 : 45.5 : JumpStart); (14.4583333333333 : 45.5 : JumpEnd); (14.5 : 45.5); (14.5 : 46.0112125651042); (14.5416666666667 : 46.0112125651042 : JumpStart); (14.7083333333333 : 46.0112125651042 : JumpEnd); (17.5 : 46.0112125651042); (17.5 : 47.0016097005208); (18.1354146666667 : 47.0016097005208 : JumpStart); (18.3020813333333 : 47.0016097005208 : JumpEnd); (18.6666666666667 : 47.0016097005208 : JumpStart); (18.8333333333333 : 47.0016097005208 : JumpEnd); (20.375 : 47.0016097005208); (20.375 : 46.4911612955729); (20.75 : 46.4911612955729)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_admin_user" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="a8e109f8-c320-4dae-bc37-c9bb106fab63" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 42.4479484049479); (5.66666666666667 : 42.4479484049479 : JumpStart); (5.83333333333333 : 42.4479484049479 : JumpEnd); (6.25 : 42.4479484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_login_log" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="f074362a-9c65-4dc4-a9ad-0fface3a73a2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 42.1642976888021); (3.5 : 42.1642976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/loginrole/loginrole_login" />
+      <nodes>
+        <classShapeMoniker Id="e6329ade-63f0-437f-882d-f6fa01c4ff88" />
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.09375 : 20.8285953776042); (15.09375 : 25.9527498372396); (16.9479166666667 : 25.9527498372396 : JumpStart); (17.1145833333333 : 25.9527498372396 : JumpEnd); (17.4166666666667 : 25.9527498372396 : JumpStart); (17.5833333333333 : 25.9527498372396 : JumpEnd); (17.75 : 25.9527498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/credit_type/credit_type_master_credit" />
+      <nodes>
+        <classShapeMoniker Id="142f88a2-6d04-4045-a49f-864436b3eaef" />
+        <classShapeMoniker Id="b44ab60a-f387-4324-a064-ca384d3b9c2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 41.817722202474); (5.66666666666667 : 41.817722202474 : JumpStart); (5.83333333333333 : 41.817722202474 : JumpEnd); (6 : 41.817722202474); (6 : 41.625); (6.04166666666667 : 41.625 : JumpStart); (6.20833333333333 : 41.625 : JumpEnd); (8.41666666666667 : 41.625 : JumpStart); (8.73958333333333 : 41.625 : JumpEnd); (8.75 : 41.625); (8.75 : 37.375); (8.79166666666667 : 37.375 : JumpStart); (8.95833333333333 : 37.375 : JumpEnd); (11.0729166666667 : 37.375 : JumpStart); (11.2395833333333 : 37.375 : JumpEnd); (11.4166666666667 : 37.375 : JumpStart); (11.7083333333333 : 37.375 : JumpEnd); (11.75 : 37.375); (11.75 : 32.5881168619792); (12.3854146666667 : 32.5881168619792 : JumpStart); (12.5520813333333 : 32.5881168619792 : JumpEnd); (13 : 32.5881168619792); (13 : 32.2131168619792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_master_daily_sale" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="d794e166-2b4f-428d-9946-6b07c49492ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 29.2844555664063); (14.0416666666667 : 29.2844555664062 : JumpStart); (14.7083333333333 : 29.2844555664063 : JumpEnd); (14.75 : 29.2844555664063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/master_daily_sale/master_daily_sale_master_daily_sales_virtual" />
+      <nodes>
+        <classShapeMoniker Id="d794e166-2b4f-428d-9946-6b07c49492ed" />
+        <classShapeMoniker Id="d8851e44-5e0d-454d-9b69-cf95c0bfbc7b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.15625 : 29.8285953776042); (11.15625 : 40.1002018229167); (11.5416666666667 : 40.1002018229167 : JumpStart); (11.7083333333333 : 40.1002018229167 : JumpEnd); (12 : 40.1002018229167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/expenses_type/expenses_type_master_expense" />
+      <nodes>
+        <classShapeMoniker Id="7b32db63-213e-45a1-9c9e-12da3bc214d7" />
+        <classShapeMoniker Id="1b26e1d1-c1d5-4898-a284-baa96f6ab268" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.9682867976262 : 51.5); (14.1285744349011 : 51.3397123627251 : JumpStart); (14.2464255650989 : 51.2218612325273 : JumpEnd); (14.375 : 51.0932867976262); (14.375 : 34.1931062825521); (14.4791666666667 : 34.1931062825521 : JumpStart); (14.7083333333333 : 34.1931062825521 : JumpEnd); (14.75 : 34.1931062825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/bank/bank_master_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="627bd3dc-5ee1-4773-8c44-1364d21d32a0" />
+        <classShapeMoniker Id="7adae979-e0e5-44a4-82ae-4552aa9f50d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 43.0208968098958); (5.0312525 : 48.5400618489583); (12 : 48.5400618489583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_master_luckyballs_sale" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="38648399-48a1-4d22-8862-846fc375e0ad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 42.7656746074219); (5.75 : 42.7656746074219); (5.75 : 41.375); (8.5 : 41.375); (8.5 : 42.9054996744792); (8.57291666666667 : 42.9054996744792 : JumpStart); (9.02083333333333 : 42.9054996744792 : JumpEnd); (11.5416666666667 : 42.9054996744792 : JumpStart); (11.7083333333333 : 42.9054996744792 : JumpEnd); (11.75 : 42.9054996744792); (11.75 : 41.25); (14.0416666666667 : 41.25 : JumpStart); (14.2708333333333 : 41.25 : JumpEnd); (14.2916666666667 : 41.25 : JumpStart); (14.4895833333333 : 41.25 : JumpEnd); (14.5416666666667 : 41.25 : JumpStart); (14.7083333333333 : 41.25 : JumpEnd); (14.7604166666667 : 41.25 : JumpStart); (14.9270833333333 : 41.25 : JumpEnd); (17.4166666666667 : 41.25 : JumpStart); (17.5833333333333 : 41.25 : JumpEnd); (17.75 : 41.25); (17.75 : 41.4631168619792); (19 : 41.4631168619792); (19 : 41.2131168619792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_master_sb_sale" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="64d4175a-1807-4210-9a55-927b0886e28a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 33.0753084309896); (11.0729166666667 : 33.0753084309896 : JumpStart); (11.2708358333333 : 33.0753084309896 : JumpEnd); (11.4166666666667 : 33.0753084309896 : JumpStart); (11.8333333333333 : 33.0753084309896 : JumpEnd); (14.0416666666667 : 33.0753084309896 : JumpStart); (14.2083333333333 : 33.0753084309896 : JumpEnd); (14.3229166666667 : 33.0753084309896 : JumpStart); (14.4895833333333 : 33.0753084309896 : JumpEnd); (14.5 : 33.0753084309896); (14.5 : 32); (14.5416666666667 : 32 : JumpStart); (14.7083333333333 : 32 : JumpEnd); (15.6666666666667 : 32 : JumpStart); (15.8333333333333 : 32 : JumpEnd); (17.4166666666667 : 32 : JumpStart); (17.5833333333333 : 32 : JumpEnd); (17.75 : 32); (17.75 : 27.75); (18.75 : 27.75); (18.75 : 27.0304996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/master_transaction/master_transaction_master_credit" />
+      <nodes>
+        <classShapeMoniker Id="0ef2ea0d-ae0d-431f-a4d9-9e20f232e8f2" />
+        <classShapeMoniker Id="b44ab60a-f387-4324-a064-ca384d3b9c2a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 33.3814042154948); (11.0729166666667 : 33.3814042154948 : JumpStart); (11.2708358333333 : 33.3814042154948 : JumpEnd); (11.4166666666667 : 33.3814042154948 : JumpStart); (11.8333333333333 : 33.3814042154948 : JumpEnd); (14.0416666666667 : 33.3814042154948 : JumpStart); (14.2083333333333 : 33.3814042154948 : JumpEnd); (14.3229166666667 : 33.3814042154948 : JumpStart); (14.7083333333333 : 33.3814042154948 : JumpEnd); (14.75 : 33.3814042154948)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/master_transaction/master_transaction_master_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="0ef2ea0d-ae0d-431f-a4d9-9e20f232e8f2" />
+        <classShapeMoniker Id="7adae979-e0e5-44a4-82ae-4552aa9f50d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 19.8854484049479); (14.5416666666667 : 19.8854484049479 : JumpStart); (14.7083333333333 : 19.8854484049479 : JumpEnd); (14.75 : 19.8854484049479); (14.75 : 26.875); (14.625 : 26.875); (14.625 : 41.5); (14.7604166666667 : 41.5 : JumpStart); (14.9270833333333 : 41.5 : JumpEnd); (15.75 : 41.5); (15.75 : 41.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/payment_type/payment_type_commission_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="884ebe77-dc70-4ec0-8b7b-c187756da1d9" />
+        <classShapeMoniker Id="8b42aeab-c033-4072-ad8b-0af0328cf4b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 19.09375); (19.75 : 19.09375); (19.75 : 19.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/payment_type/payment_type_debt_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="884ebe77-dc70-4ec0-8b7b-c187756da1d9" />
+        <classShapeMoniker Id="4cd72acd-fdd1-4838-ace6-840a18ec3eab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 20.3594246074219); (14.5416666666667 : 20.3594246074219 : JumpStart); (14.8333333333333 : 20.3594246074219 : JumpEnd); (14.875 : 20.3594246074219); (14.875 : 26.625); (14.8333333333333 : 26.625 : JumpStart); (14.6666666666667 : 26.625 : JumpEnd); (14.5152887053285 : 26.625 : JumpStart); (14.2579787422376 : 26.625 : JumpEnd); (14.25 : 26.625); (14.25 : 31.625); (14.3229166666667 : 31.625 : JumpStart); (14.7083333333333 : 31.625 : JumpEnd); (15.75 : 31.625); (15.75 : 32.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/payment_type/payment_type_master_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="884ebe77-dc70-4ec0-8b7b-c187756da1d9" />
+        <classShapeMoniker Id="7adae979-e0e5-44a4-82ae-4552aa9f50d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.5 : 22.9431469726563); (14.5416666666667 : 22.9431469726563 : JumpStart); (14.9583333333333 : 22.9431469726563 : JumpEnd); (15.0104166666667 : 22.9431469726563 : JumpStart); (15.1770833333333 : 22.9431469726563 : JumpEnd); (15.25 : 22.9431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/Item/Item_PaymentItem" />
+      <nodes>
+        <classShapeMoniker Id="83734981-f55a-4d18-bc67-5b31809e9573" />
+        <classShapeMoniker Id="d7370030-f83e-4c68-8806-9f402f6cf26d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.03125 : 23.9631982421875); (17.03125 : 31.2532055664063); (17.4166666666667 : 31.2532055664063 : JumpStart); (17.5833333333333 : 31.2532055664063 : JumpEnd); (17.6666666666667 : 31.2532055664063 : JumpStart); (17.8333333333333 : 31.2532055664063 : JumpEnd); (18 : 31.2532055664063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/PaymentItem/PaymentItem_PaymentNotificationRequest" />
+      <nodes>
+        <classShapeMoniker Id="d7370030-f83e-4c68-8806-9f402f6cf26d" />
+        <classShapeMoniker Id="0b85a7a0-f3c5-4885-8730-a4bdadd69764" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45923076923077 : 3.67470540364583); (1.45923076923077 : 3.92470540364583); (2.05461538461538 : 3.92470540364583); (2.05461538461538 : 3.67470540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BettingSuiteDataContext/report/report_report" />
+      <nodes>
+        <classShapeMoniker Id="73a37d93-e4a8-443d-b5e8-d10fde313db0" />
+        <classShapeMoniker Id="73a37d93-e4a8-443d-b5e8-d10fde313db0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 37); (7.25 : 36.0392976888021); (8.54166666666667 : 36.0392976888021 : JumpStart); (8.89583333333333 : 36.0392976888021 : JumpEnd); (9 : 36.0392976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_commission_balance" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="0b419f12-8607-440c-811b-de444975d4b8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 37.03125); (8.60416666666667 : 37.03125 : JumpStart); (8.80208333333333 : 37.03125 : JumpEnd); (11.0729166666667 : 37.03125 : JumpStart); (11.2395833333333 : 37.03125 : JumpEnd); (11.4166666666667 : 37.03125 : JumpStart); (11.8333333333333 : 37.03125 : JumpEnd); (14.0416666666667 : 37.03125 : JumpStart); (14.2083333333333 : 37.03125 : JumpEnd); (14.2916666666667 : 37.03125 : JumpStart); (14.7708333333333 : 37.03125 : JumpEnd); (14.84375 : 37.03125); (14.84375 : 41.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_commission_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="8b42aeab-c033-4072-ad8b-0af0328cf4b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 40.8677500266426); (8.62857443490112 : 41.2463244615437 : JumpStart); (8.80892556509888 : 41.4266755917415 : JumpEnd); (8.9375 : 41.5552500266426); (8.9375 : 43.1714998372396); (11.5416666666667 : 43.1714998372396 : JumpStart); (11.7083333333333 : 43.1714998372396 : JumpEnd); (12 : 43.1714998372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_commission_transaction" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="f8f702ff-b274-4039-b036-56a00f101642" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 38.7027498372396); (8.41666666666667 : 38.7027498372396 : JumpStart); (8.83333333333333 : 38.7027498372396 : JumpEnd); (9 : 38.7027498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_balance_sheet" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="eecf2af2-66d5-450d-bab6-04cc1367c06b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 39.7937114704026); (8.5 : 39.7937114704026); (8.5 : 37.5); (8.60416666666667 : 37.5 : JumpStart); (8.95833333333333 : 37.5 : JumpEnd); (11.0729166666667 : 37.5 : JumpStart); (11.2395833333333 : 37.5 : JumpEnd); (11.5 : 37.5); (11.5 : 32.7131168619792); (11.5416666666667 : 32.7131168619792 : JumpStart); (11.8333333333333 : 32.7131168619792 : JumpEnd); (12.468748 : 32.7131168619792); (12.468748 : 32.2131168619792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_daily_sale" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="d794e166-2b4f-428d-9946-6b07c49492ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 40.2913028971354); (8.29166666666667 : 40.2913028971354 : JumpStart); (8.45833333333333 : 40.2913028971354 : JumpEnd); (8.60416666666667 : 40.2913028971354 : JumpStart); (8.95833333333333 : 40.2913028971354 : JumpEnd); (11.4166666666667 : 40.2913028971354 : JumpStart); (11.7083333333333 : 40.2913028971354 : JumpEnd); (12 : 40.2913028971354)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_expense" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="1b26e1d1-c1d5-4898-a284-baa96f6ab268" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 37.015625); (8.60416666666667 : 37.015625 : JumpStart); (8.80208333333333 : 37.015625 : JumpEnd); (11.0729166666667 : 37.015625 : JumpStart); (11.2395833333333 : 37.015625 : JumpEnd); (11.4166666666667 : 37.015625 : JumpStart); (11.8333333333333 : 37.015625 : JumpEnd); (14.0416666666667 : 37.015625 : JumpStart); (14.2083333333333 : 37.015625 : JumpEnd); (14.2916666666667 : 37.015625 : JumpStart); (14.7708333333333 : 37.015625 : JumpEnd); (14.796875 : 37.015625); (14.796875 : 36.1362125651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="7adae979-e0e5-44a4-82ae-4552aa9f50d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.19 : 40.8862125651042); (8.65625 : 41.3524625651042); (8.65625 : 47.6722818424479); (12 : 47.6722818424479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_luckyballs_sale" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="38648399-48a1-4d22-8862-846fc375e0ad" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 38.0701224186198); (8.29166666666667 : 38.0701224186198 : JumpStart); (8.83333333333333 : 38.0701224186198 : JumpEnd); (8.875 : 38.0701224186198); (8.875 : 37.25); (11.0729166666667 : 37.25 : JumpStart); (11.2395833333333 : 37.25 : JumpEnd); (11.4166666666667 : 37.25 : JumpStart); (11.8333333333333 : 37.25 : JumpEnd); (14.0416666666667 : 37.25 : JumpStart); (14.2083333333333 : 37.25 : JumpEnd); (14.2916666666667 : 37.25 : JumpStart); (14.4895833333333 : 37.25 : JumpEnd); (14.5 : 37.25); (14.5 : 36.5); (14.5416666666667 : 36.5 : JumpStart); (14.7083333333333 : 36.5 : JumpEnd); (14.7135416666667 : 36.5 : JumpStart); (14.8802083333333 : 36.5 : JumpEnd); (17.4166666666667 : 36.5 : JumpStart); (17.5833333333333 : 36.5 : JumpEnd); (18.4166671666667 : 36.5 : JumpStart); (18.5833338333333 : 36.5 : JumpEnd); (19 : 36.5); (19 : 36.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_sb_sale" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="64d4175a-1807-4210-9a55-927b0886e28a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.21769230769231 : 37); (8.625 : 36.5926923076923); (8.625 : 33.0585034179688); (9 : 33.0585034179688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_master_transaction" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="0ef2ea0d-ae0d-431f-a4d9-9e20f232e8f2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 39.2482306538211); (8.41666666666667 : 39.2482306538211 : JumpStart); (8.58333333333333 : 39.2482306538211 : JumpEnd); (8.625 : 39.2482306538211); (8.625 : 37.4375); (8.63541666666667 : 37.4375 : JumpStart); (8.95833333333333 : 37.4375 : JumpEnd); (11.0729166666667 : 37.4375 : JumpStart); (11.2395833333333 : 37.4375 : JumpEnd); (11.5416666666667 : 37.4375 : JumpStart); (11.7083333333333 : 37.4375 : JumpEnd); (14.0416666666667 : 37.4375 : JumpStart); (14.2083333333333 : 37.4375 : JumpEnd); (14.2916666666667 : 37.4375 : JumpStart); (14.4895833333333 : 37.4375 : JumpEnd); (14.6875 : 37.4375); (14.6875 : 36.625); (14.7135416666667 : 36.625 : JumpStart); (14.8802083333333 : 36.625 : JumpEnd); (17.4166666666667 : 36.625 : JumpStart); (17.5833333333333 : 36.625 : JumpEnd); (18.5000005 : 36.625); (18.5000005 : 35.9245426432292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_PaymentNotificationRequest" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="0b85a7a0-f3c5-4885-8730-a4bdadd69764" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 41.2513612283153); (5.875 : 40.8763612283153); (5.875 : 41.2612125651042); (6.25 : 40.8862125651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_shop" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 40.8292884881811); (8.375 : 40.9542884881811); (8.375 : 39.875); (8.62857443490112 : 40.1285744349011 : JumpStart); (8.80892556509888 : 40.3089255650989 : JumpEnd); (8.81607443490112 : 40.3160744349011 : JumpStart); (8.93392556509888 : 40.4339255650989 : JumpEnd); (9 : 40.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_shop_balance_sheet" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="6dfb953b-4505-4abd-858a-a7caf09cca6b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15 : 19.567724702474); (14.8125 : 19.567724702474); (14.8125 : 27); (14.7083333333333 : 27 : JumpStart); (14.1666666666667 : 27 : JumpEnd); (14.125 : 27); (14.125 : 46.5); (14.2916666666667 : 46.5 : JumpStart); (14.5208333333333 : 46.5 : JumpEnd); (15.1354146666667 : 46.5 : JumpStart); (15.3020813333333 : 46.5 : JumpEnd); (15.75 : 46.5); (15.75 : 46.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/credit_type/credit_type_shop_credit" />
+      <nodes>
+        <classShapeMoniker Id="142f88a2-6d04-4045-a49f-864436b3eaef" />
+        <classShapeMoniker Id="9ece6645-a48d-4ae3-a9e5-26957d261abc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 38.3864361279297); (8.375 : 38.3864361279297); (8.375 : 37.375); (8.60416666666667 : 37.375 : JumpStart); (8.95833333333333 : 37.375 : JumpEnd); (11.0729166666667 : 37.375 : JumpStart); (11.2395833333333 : 37.375 : JumpEnd); (11.4166666666667 : 37.375 : JumpStart); (11.7083333333333 : 37.375 : JumpEnd); (14.0416666666667 : 37.375 : JumpStart); (14.2083333333333 : 37.375 : JumpEnd); (14.2916666666667 : 37.375 : JumpStart); (14.4895833333333 : 37.375 : JumpEnd); (14.5416666666667 : 37.375 : JumpStart); (14.7083333333333 : 37.375 : JumpEnd); (14.7604166666667 : 37.375 : JumpStart); (14.9270833333333 : 37.375 : JumpEnd); (14.9375 : 37.375); (14.9375 : 36.875); (16 : 36.875); (16 : 37.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_shop_daily_sale" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="047778a2-991b-4d3d-b370-e2d3d81bc781" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 42.1328353037109); (5.66666666666667 : 42.1328353037109 : JumpStart); (5.83333333333333 : 42.1328353037109 : JumpEnd); (6.125 : 42.1328353037109); (6.125 : 41.5); (8.41666666666667 : 41.5 : JumpStart); (8.83333333333333 : 41.5 : JumpEnd); (8.875 : 41.5); (8.875 : 40.1875); (11.5 : 40.1875); (11.5 : 41.0689111328125); (11.5416666666667 : 41.0689111328125 : JumpStart); (11.7083333333333 : 41.0689111328125 : JumpEnd); (14.0416666666667 : 41.0689111328125 : JumpStart); (14.2708333333333 : 41.0689111328125 : JumpEnd); (14.2916666666667 : 41.0689111328125 : JumpStart); (14.4895833333333 : 41.0689111328125 : JumpEnd); (14.5416666666667 : 41.0689111328125 : JumpStart); (14.7083333333333 : 41.0689111328125 : JumpEnd); (14.7604166666667 : 41.0689111328125 : JumpStart); (14.9270833333333 : 41.0689111328125 : JumpEnd); (16 : 41.0689111328125); (16 : 40.8189111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/login/login_shop_daily_sale" />
+      <nodes>
+        <classShapeMoniker Id="06aae3a3-5a48-4ed0-b765-9851f5b5945f" />
+        <classShapeMoniker Id="047778a2-991b-4d3d-b370-e2d3d81bc781" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.1875 : 55.125); (14.1875 : 40.6194075520833); (14.2916666666667 : 40.6194075520833 : JumpStart); (14.4895833333333 : 40.6194075520833 : JumpEnd); (14.5416666666667 : 40.6194075520833 : JumpStart); (14.7083333333333 : 40.6194075520833 : JumpEnd); (14.7604166666667 : 40.6194075520833 : JumpStart); (14.9270833333333 : 40.6194075520833 : JumpEnd); (15 : 40.6194075520833)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop_daily_sales_virtual/shop_daily_sales_virtual_shop_daily_sale" />
+      <nodes>
+        <classShapeMoniker Id="831e29c2-a2a0-4d28-a7da-bb7d8a063a8c" />
+        <classShapeMoniker Id="047778a2-991b-4d3d-b370-e2d3d81bc781" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 37.0953836153846); (8.62857443490112 : 36.7168091804835 : JumpStart); (8.77767556509888 : 36.5677080502857 : JumpEnd); (8.8125 : 36.5328836153846); (8.8125 : 34.9335034179688); (11.0729166666667 : 34.9335034179688 : JumpStart); (11.2395833333333 : 34.9335034179688 : JumpEnd); (11.4166666666667 : 34.9335034179688 : JumpStart); (11.8333333333333 : 34.9335034179688 : JumpEnd); (12 : 34.9335034179688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_shop_expense" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="c96c9080-acaa-4042-b899-ec6b95e263d1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.1875025 : 29.8285953776042); (11.1875025 : 34.7752526269531); (11.4166666666667 : 34.7752526269531 : JumpStart); (11.8333333333333 : 34.7752526269531 : JumpEnd); (12 : 34.7752526269531)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/expenses_type/expenses_type_shop_expense" />
+      <nodes>
+        <classShapeMoniker Id="7b32db63-213e-45a1-9c9e-12da3bc214d7" />
+        <classShapeMoniker Id="c96c9080-acaa-4042-b899-ec6b95e263d1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 52.6771468098958); (14.1041666666667 : 52.6771468098958 : JumpStart); (14.2708333333333 : 52.6771468098958 : JumpEnd); (18.75 : 52.6771468098958); (18.75 : 46.7516097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/bank/bank_shop_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="627bd3dc-5ee1-4773-8c44-1364d21d32a0" />
+        <classShapeMoniker Id="c6826a62-6025-4da6-9c5b-8f1ac7ee509b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.90625 : 50.25); (16.90625 : 46.2556062825521); (17.1666666666667 : 46.2556062825521 : JumpStart); (17.3333333333333 : 46.2556062825521 : JumpEnd); (17.4166666666667 : 46.2556062825521 : JumpStart); (17.5833333333333 : 46.2556062825521 : JumpEnd); (17.75 : 46.2556062825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/bank_list/bank_list_shop_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="1a456b23-5b63-43a8-a4fd-469ff69bae49" />
+        <classShapeMoniker Id="c6826a62-6025-4da6-9c5b-8f1ac7ee509b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 19.489599202474); (14.625 : 19.489599202474); (14.625 : 24.875); (14.6666666666667 : 24.875 : JumpStart); (14.9583333333333 : 24.875 : JumpEnd); (15.0104166666667 : 24.875 : JumpStart); (15.1770833333333 : 24.875 : JumpEnd); (16.9479166666667 : 24.875 : JumpStart); (17.1145833333333 : 24.875 : JumpEnd); (17.5 : 24.875); (17.5 : 42.875); (18.75 : 42.875); (18.75 : 43.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/payment_type/payment_type_shop_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="884ebe77-dc70-4ec0-8b7b-c187756da1d9" />
+        <classShapeMoniker Id="c6826a62-6025-4da6-9c5b-8f1ac7ee509b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 45.0897534179688); (11.5416666666667 : 45.0897534179688 : JumpStart); (11.7083333333333 : 45.0897534179688 : JumpEnd); (14.0416666666667 : 45.0897534179688 : JumpStart); (14.2708333333333 : 45.0897534179688 : JumpEnd); (14.2916666666667 : 45.0897534179688 : JumpStart); (14.5208333333333 : 45.0897534179688 : JumpEnd); (14.625 : 45.0897534179688); (14.625 : 46.2612125651042); (15.218748 : 46.2612125651042); (15.218748 : 46.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop_transaction/shop_transaction_shop_credit" />
+      <nodes>
+        <classShapeMoniker Id="3eecabb1-988c-4c2e-9070-119d5ee09fa0" />
+        <classShapeMoniker Id="9ece6645-a48d-4ae3-a9e5-26957d261abc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 44.8533776269531); (11.5416666666667 : 44.8533776269531 : JumpStart); (11.7083333333333 : 44.8533776269531 : JumpEnd); (14.0416666666667 : 44.8533776269531 : JumpStart); (14.2708333333333 : 44.8533776269531 : JumpEnd); (14.2916666666667 : 44.8533776269531 : JumpStart); (14.5208333333333 : 44.8533776269531 : JumpEnd); (14.5625 : 44.8533776269531); (14.5625 : 46.1362125651042); (17.25 : 46.1362125651042); (17.25 : 47.2516097005208); (18.218748 : 47.2516097005208); (18.218748 : 46.7516097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop_transaction/shop_transaction_shop_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="3eecabb1-988c-4c2e-9070-119d5ee09fa0" />
+        <classShapeMoniker Id="c6826a62-6025-4da6-9c5b-8f1ac7ee509b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.22846153846154 : 40.8862125651042); (8.62857443490112 : 41.2863254615437 : JumpStart); (8.80892556509888 : 41.4666765917415 : JumpEnd); (8.8125 : 41.4702510266426); (8.8125 : 45.0585034179688); (9 : 45.0585034179688)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop/shop_shop_transaction" />
+      <nodes>
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+        <classShapeMoniker Id="3eecabb1-988c-4c2e-9070-119d5ee09fa0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 37.2892976888021); (6.25 : 37.2892976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/shop_type/shop_type_shop" />
+      <nodes>
+        <classShapeMoniker Id="b3072ab9-d657-4a69-8cba-74d8b06a6eb2" />
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 39.6362939453125); (1.75 : 40.2300012552083); (6.25 : 40.2300012552083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/state_list/state_list_shop" />
+      <nodes>
+        <classShapeMoniker Id="e21363aa-f6b7-488b-8420-530952f08450" />
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 38.9431469726563); (6.25 : 38.9431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/state_local_govt/state_local_govt_shop" />
+      <nodes>
+        <classShapeMoniker Id="66c5926e-d69a-4548-847a-65307e7ae711" />
+        <classShapeMoniker Id="3f745638-6c47-4c74-98c6-d7bc6ca50588" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 38.9431469726563); (3.5 : 38.9431469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/state_list/state_list_state_local_govt" />
+      <nodes>
+        <classShapeMoniker Id="e21363aa-f6b7-488b-8420-530952f08450" />
+        <classShapeMoniker Id="66c5926e-d69a-4548-847a-65307e7ae711" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 33.8997708374399); (8.56607443490112 : 34.215845272341 : JumpStart); (8.68392556509888 : 34.3336964025388 : JumpEnd); (8.71875 : 34.3685208374399); (8.71875 : 43.0072472558594); (8.72916666666667 : 43.0072472558594 : JumpStart); (9.02083333333333 : 43.0072472558594 : JumpEnd); (11.5416666666667 : 43.0072472558594 : JumpStart); (11.7083333333333 : 43.0072472558594 : JumpEnd); (12 : 43.0072472558594)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_category/transaction_category_commission_transaction" />
+      <nodes>
+        <classShapeMoniker Id="5cbead14-d61e-4f7b-9aa8-036850dabc5a" />
+        <classShapeMoniker Id="f8f702ff-b274-4039-b036-56a00f101642" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.2182867976262 : 32); (8.625 : 31.5932867976262); (8.625 : 21.4142976888021); (14.5416666666667 : 21.4142976888021 : JumpStart); (14.9583333333333 : 21.4142976888021 : JumpEnd); (15.0104166666667 : 21.4142976888021 : JumpStart); (15.1770833333333 : 21.4142976888021 : JumpEnd); (18.75 : 21.4142976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_category/transaction_category_debt_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="5cbead14-d61e-4f7b-9aa8-036850dabc5a" />
+        <classShapeMoniker Id="4cd72acd-fdd1-4838-ace6-840a18ec3eab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 32.0966487596154); (8.8125 : 31.5341487596154); (8.8125 : 25.8882332011719); (9 : 25.8882332011719)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_category/transaction_category_debt_transaction" />
+      <nodes>
+        <classShapeMoniker Id="5cbead14-d61e-4f7b-9aa8-036850dabc5a" />
+        <classShapeMoniker Id="9918ef9b-52d3-4089-a73a-033acf7a8d82" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 32.5463285887921); (9 : 32.5463285887921)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_category/transaction_category_master_transaction" />
+      <nodes>
+        <classShapeMoniker Id="5cbead14-d61e-4f7b-9aa8-036850dabc5a" />
+        <classShapeMoniker Id="0ef2ea0d-ae0d-431f-a4d9-9e20f232e8f2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 33.9329941923077); (8.56607443490112 : 34.2490686272088 : JumpStart); (8.68392556509888 : 34.3669197574066 : JumpEnd); (8.6875 : 34.3704941923077); (8.6875 : 44.2479997089844); (8.72916666666667 : 44.2479997089844 : JumpStart); (8.89583333333333 : 44.2479997089844 : JumpEnd); (9 : 44.2479997089844)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_category/transaction_category_shop_transaction" />
+      <nodes>
+        <classShapeMoniker Id="5cbead14-d61e-4f7b-9aa8-036850dabc5a" />
+        <classShapeMoniker Id="3eecabb1-988c-4c2e-9070-119d5ee09fa0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.9776060208834 : 26.2612939453125); (14.40625 : 26.6899379244291); (14.40625 : 44.3669944547526); (14.75 : 44.3669944547526)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_type/transaction_type_commission_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="cc7cc32d-6b66-4bea-9967-9c0fbfa92d90" />
+        <classShapeMoniker Id="8b42aeab-c033-4072-ad8b-0af0328cf4b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 24.875); (14.25 : 24.625); (14.5416666666667 : 24.625 : JumpStart); (14.9583333333333 : 24.625 : JumpEnd); (15.0104166666667 : 24.625 : JumpStart); (15.1770833333333 : 24.625 : JumpEnd); (16.9479166666667 : 24.625 : JumpStart); (17.1145833333333 : 24.625 : JumpEnd); (19.484373 : 24.625); (19.484373 : 23.3862125651042)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_type/transaction_type_debt_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="cc7cc32d-6b66-4bea-9967-9c0fbfa92d90" />
+        <classShapeMoniker Id="4cd72acd-fdd1-4838-ace6-840a18ec3eab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 26.1930446280048); (14.5625 : 26.7555446280048); (14.5625 : 35.1959114238281); (14.75 : 35.1959114238281)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_type/transaction_type_master_lodgement_reimbursment" />
+      <nodes>
+        <classShapeMoniker Id="cc7cc32d-6b66-4bea-9967-9c0fbfa92d90" />
+        <classShapeMoniker Id="7adae979-e0e5-44a4-82ae-4552aa9f50d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12 : 26.2612939453125); (11.625 : 26.6362939453125); (11.625 : 45.8846321269531); (11 : 45.8846321269531)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BettingSuiteDataContext/transaction_type/transaction_type_shop_transaction" />
+      <nodes>
+        <classShapeMoniker Id="cc7cc32d-6b66-4bea-9967-9c0fbfa92d90" />
+        <classShapeMoniker Id="3eecabb1-988c-4c2e-9070-119d5ee09fa0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

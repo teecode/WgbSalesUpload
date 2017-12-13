@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BETTINGSUITE" Class="BettingSuiteDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=T360-INNOVATIVZ\WGBET_TESTDB;Initial Catalog=BETTINGSUITE;User ID=admin" SettingsObjectName="WgbSalesUpload.Properties.Settings" SettingsPropertyName="BETTINGSUITEConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.admin_users" Member="admin_users">
+    <Type Name="admin_user">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="login" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="name_title" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="sex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="skype" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="bbm_pin" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="join_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="default_credit_limit" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="isactive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="num_of_shops" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="photopath" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="account_name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="accountNo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Bank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="state" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="admin_user_admin_user" Member="admin_user2" ThisKey="id" OtherKey="id" Type="admin_user" Cardinality="One" />
+      <Association Name="admin_user_admin_user" Member="admin_user1" ThisKey="id" OtherKey="id" Type="admin_user" IsForeignKey="true" />
+      <Association Name="bank_list_admin_user" Member="bank_list" ThisKey="Bank" OtherKey="id" Type="bank_list" IsForeignKey="true" />
+      <Association Name="login_admin_user" Member="login1" ThisKey="login" OtherKey="id" Type="login" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.application" Member="applications">
+    <Type Name="application">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bank" Member="banks">
+    <Type Name="bank">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="account_no" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="bank_commission_lodgement_reimbursment" Member="commission_lodgement_reimbursments" ThisKey="id" OtherKey="bank" Type="commission_lodgement_reimbursment" />
+      <Association Name="bank_master_lodgement_reimbursment" Member="master_lodgement_reimbursments" ThisKey="id" OtherKey="bank" Type="master_lodgement_reimbursment" />
+      <Association Name="bank_shop_lodgement_reimbursment" Member="shop_lodgement_reimbursments" ThisKey="id" OtherKey="bank" Type="shop_lodgement_reimbursment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bank_list" Member="bank_lists">
+    <Type Name="bank_list">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="bank_list_admin_user" Member="admin_users" ThisKey="id" OtherKey="Bank" Type="admin_user" />
+      <Association Name="bank_list_shop_lodgement_reimbursment" Member="shop_lodgement_reimbursments" ThisKey="id" OtherKey="bank" Type="shop_lodgement_reimbursment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.banner" Member="banners">
+    <Type Name="banner">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="position" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="source" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Column Name="alt" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commission_balance" Member="commission_balances">
+    <Type Name="commission_balance">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="shop_commission_balance" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commission_lodgement_reimbursment" Member="commission_lodgement_reimbursments">
+    <Type Name="commission_lodgement_reimbursment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="from_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="to_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="weekno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="teller_number" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="[transaction]" Member="transaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="transaction_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="transaction_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="payment_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="bank_commission_lodgement_reimbursment" Member="bank1" ThisKey="bank" OtherKey="id" Type="bank" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="commission_transaction_commission_lodgement_reimbursment" Member="commission_transaction" ThisKey="transaction" OtherKey="id" Type="commission_transaction" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="payment_type_commission_lodgement_reimbursment" Member="payment_type1" ThisKey="payment_type" OtherKey="id" Type="payment_type" IsForeignKey="true" />
+      <Association Name="shop_commission_lodgement_reimbursment" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" />
+      <Association Name="transaction_type_commission_lodgement_reimbursment" Member="transaction_type1" ThisKey="transaction_type" OtherKey="id" Type="transaction_type" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commission_transaction" Member="commission_transactions">
+    <Type Name="commission_transaction">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trans_timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="trans_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance_before" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance_after" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="trans_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="details" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="commission_transaction_commission_lodgement_reimbursment" Member="commission_lodgement_reimbursments" ThisKey="id" OtherKey="transaction" Type="commission_lodgement_reimbursment" />
+      <Association Name="shop_commission_transaction" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" />
+      <Association Name="transaction_category_commission_transaction" Member="transaction_category" ThisKey="trans_category" OtherKey="id" Type="transaction_category" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.credit_type" Member="credit_types">
+    <Type Name="credit_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="credit_type_master_credit" Member="master_credits" ThisKey="id" OtherKey="credit_type" Type="master_credit" />
+      <Association Name="credit_type_shop_credit" Member="shop_credits" ThisKey="id" OtherKey="credit_type" Type="shop_credit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.debt" Member="debts">
+    <Type Name="debt">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shop" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="debt_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="current_amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="startdate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="expirydate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="proposed_installment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="installment_count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="proposed_installment_amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="installment_duration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="other_information" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Association Name="debt_debt_transaction" Member="debt_transactions" ThisKey="id" OtherKey="debt" Type="debt_transaction" />
+      <Association Name="debt_installment_duration_debt" Member="debt_installment_duration" ThisKey="installment_duration" OtherKey="id" Type="debt_installment_duration" IsForeignKey="true" />
+      <Association Name="debt_type_debt" Member="debt_type1" ThisKey="debt_type" OtherKey="id" Type="debt_type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.debt_installment_duration" Member="debt_installment_durations">
+    <Type Name="debt_installment_duration">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="debt_installment_duration_debt" Member="debts" ThisKey="id" OtherKey="installment_duration" Type="debt" />
+    </Type>
+  </Table>
+  <Table Name="dbo.debt_lodgement_reimbursment" Member="debt_lodgement_reimbursments">
+    <Type Name="debt_lodgement_reimbursment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="from_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="to_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="weekno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="teller_number" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="[transaction]" Member="transaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="transaction_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="transaction_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="payment_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="debt_transaction_debt_lodgement_reimbursment" Member="debt_transaction" ThisKey="transaction" OtherKey="id" Type="debt_transaction" IsForeignKey="true" />
+      <Association Name="payment_type_debt_lodgement_reimbursment" Member="payment_type1" ThisKey="payment_type" OtherKey="id" Type="payment_type" IsForeignKey="true" />
+      <Association Name="transaction_category_debt_lodgement_reimbursment" Member="transaction_category1" ThisKey="transaction_category" OtherKey="id" Type="transaction_category" IsForeignKey="true" />
+      <Association Name="transaction_type_debt_lodgement_reimbursment" Member="transaction_type1" ThisKey="transaction_type" OtherKey="id" Type="transaction_type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.debt_transaction" Member="debt_transactions">
+    <Type Name="debt_transaction">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="debt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trans_timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="trans_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance_before" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance_after" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="trans_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="details" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="debt_transaction_debt_lodgement_reimbursment" Member="debt_lodgement_reimbursments" ThisKey="id" OtherKey="transaction" Type="debt_lodgement_reimbursment" />
+      <Association Name="debt_debt_transaction" Member="debt1" ThisKey="debt" OtherKey="id" Type="debt" IsForeignKey="true" />
+      <Association Name="transaction_category_debt_transaction" Member="transaction_category" ThisKey="trans_category" OtherKey="id" Type="transaction_category" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.debt_type" Member="debt_types">
+    <Type Name="debt_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="installment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="intallment_duration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="installment_amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="debt_type_debt" Member="debts" ThisKey="id" OtherKey="debt_type" Type="debt" />
+    </Type>
+  </Table>
+  <Table Name="dbo.expenses_type" Member="expenses_types">
+    <Type Name="expenses_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="expenses_type_master_expense" Member="master_expenses" ThisKey="id" OtherKey="expense_type" Type="master_expense" />
+      <Association Name="expenses_type_shop_expense" Member="shop_expenses" ThisKey="id" OtherKey="expense_type" Type="shop_expense" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Item" Member="Items">
+    <Type Name="Item">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Item_PaymentItem" Member="PaymentItems" ThisKey="id" OtherKey="Item" Type="PaymentItem" />
+    </Type>
+  </Table>
+  <Table Name="dbo.login" Member="logins">
+    <Type Name="login">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="role" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="login_admin_user" Member="admin_users" ThisKey="id" OtherKey="login" Type="admin_user" />
+      <Association Name="login_login_log" Member="login_logs" ThisKey="id" OtherKey="login" Type="login_log" />
+      <Association Name="login_master_daily_sale" Member="master_daily_sales" ThisKey="id" OtherKey="posted_by" Type="master_daily_sale" />
+      <Association Name="login_master_luckyballs_sale" Member="master_luckyballs_sales" ThisKey="id" OtherKey="posted_by" Type="master_luckyballs_sale" />
+      <Association Name="login_master_sb_sale" Member="master_sb_sales" ThisKey="id" OtherKey="posted_by" Type="master_sb_sale" />
+      <Association Name="login_shop" Member="shops" ThisKey="id" OtherKey="shopmanager_id" Type="shop" />
+      <Association Name="login_shop_daily_sale" Member="shop_daily_sales" ThisKey="id" OtherKey="posted_by" Type="shop_daily_sale" />
+      <Association Name="loginrole_login" Member="loginrole" ThisKey="role" OtherKey="id" Type="loginrole" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.login_log" Member="login_logs">
+    <Type Name="login_log">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="login" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="timein" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="timeout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="module" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ip" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Association Name="login_login_log" Member="login1" ThisKey="login" OtherKey="id" Type="login" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.loginrole" Member="loginroles">
+    <Type Name="loginrole">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="role" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="loginrole_login" Member="logins" ThisKey="id" OtherKey="role" Type="login" />
+    </Type>
+  </Table>
+  <Table Name="dbo.loginroleaccess" Member="loginroleaccesses">
+    <Type Name="loginroleaccess">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="loginrole" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hasaccess" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mail" Member="mails">
+    <Type Name="mail">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mail_validity" Member="mail_validities">
+    <Type Name="mail_validity">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="validatycode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="expirydate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_balance_sheet" Member="master_balance_sheets">
+    <Type Name="master_balance_sheet">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sales_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="credit_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="online_credit" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="netbalance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="shop_master_balance_sheet" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_credit" Member="master_credits">
+    <Type Name="master_credit">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[transaction]" Member="transaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance_before" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance_after" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="credit_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="credit_type_master_credit" Member="credit_type1" ThisKey="credit_type" OtherKey="id" Type="credit_type" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="master_transaction_master_credit" Member="master_transaction" ThisKey="transaction" OtherKey="id" Type="master_transaction" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_daily_sales" Member="master_daily_sales">
+    <Type Name="master_daily_sale">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="stake" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="cancelled" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="single_stake_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="date_posted" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="single_stake_commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="other_stake_commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="single_stake_percent" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="master_daily_sale_master_daily_sales_virtual" Member="master_daily_sales_virtuals" ThisKey="id" OtherKey="master_sales" Type="master_daily_sales_virtual" />
+      <Association Name="login_master_daily_sale" Member="login" ThisKey="posted_by" OtherKey="id" Type="login" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="shop_master_daily_sale" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_daily_sales_virtuals" Member="master_daily_sales_virtuals">
+    <Type Name="master_daily_sales_virtual">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="master_sales" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VHC_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VHC_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VHC_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VFL_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VFL_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VFL_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VDR_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VDR_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VDR_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="master_daily_sale_master_daily_sales_virtual" Member="master_daily_sale" ThisKey="master_sales" OtherKey="id" Type="master_daily_sale" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_expense" Member="master_expenses">
+    <Type Name="master_expense">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="expense_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="expenses_type_master_expense" Member="expenses_type" ThisKey="expense_type" OtherKey="id" Type="expenses_type" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="shop_master_expense" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_lodgement_reimbursment" Member="master_lodgement_reimbursments">
+    <Type Name="master_lodgement_reimbursment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="from_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="to_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="weekno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="teller_number" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="[transaction]" Member="transaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="transaction_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="transaction_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="payment_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="bank_master_lodgement_reimbursment" Member="bank1" ThisKey="bank" OtherKey="id" Type="bank" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="master_transaction_master_lodgement_reimbursment" Member="master_transaction" ThisKey="transaction" OtherKey="id" Type="master_transaction" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="payment_type_master_lodgement_reimbursment" Member="payment_type1" ThisKey="payment_type" OtherKey="id" Type="payment_type" IsForeignKey="true" />
+      <Association Name="shop_master_lodgement_reimbursment" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" />
+      <Association Name="transaction_type_master_lodgement_reimbursment" Member="transaction_type1" ThisKey="transaction_type" OtherKey="id" Type="transaction_type" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_luckyballs_sales" Member="master_luckyballs_sales">
+    <Type Name="master_luckyballs_sale">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="stake" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="cancelled" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="single_stake_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="date_posted" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="single_stake_commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="other_stake_commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="single_stake_percent" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="login_master_luckyballs_sale" Member="login" ThisKey="posted_by" OtherKey="id" Type="login" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="shop_master_luckyballs_sale" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_sb_sales" Member="master_sb_sales">
+    <Type Name="master_sb_sale">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="stake" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="cancelled" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="single_stake_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="date_posted" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="single_stake_commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="other_stake_commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="single_stake_percent" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="login_master_sb_sale" Member="login" ThisKey="posted_by" OtherKey="id" Type="login" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="shop_master_sb_sale" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.master_transaction" Member="master_transactions">
+    <Type Name="master_transaction">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trans_timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="trans_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance_before" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance_after" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="trans_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="details" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="master_transaction_master_credit" Member="master_credits" ThisKey="id" OtherKey="transaction" Type="master_credit" />
+      <Association Name="master_transaction_master_lodgement_reimbursment" Member="master_lodgement_reimbursments" ThisKey="id" OtherKey="transaction" Type="master_lodgement_reimbursment" />
+      <Association Name="shop_master_transaction" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" />
+      <Association Name="transaction_category_master_transaction" Member="transaction_category" ThisKey="trans_category" OtherKey="id" Type="transaction_category" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.message" Member="messages">
+    <Type Name="message">
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[from]" Member="from" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[to]" Member="to" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="subject" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="body" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.payment_request" Member="payment_requests">
+    <Type Name="payment_request">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="request" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.payment_type" Member="payment_types">
+    <Type Name="payment_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="payment_type_commission_lodgement_reimbursment" Member="commission_lodgement_reimbursments" ThisKey="id" OtherKey="payment_type" Type="commission_lodgement_reimbursment" />
+      <Association Name="payment_type_debt_lodgement_reimbursment" Member="debt_lodgement_reimbursments" ThisKey="id" OtherKey="payment_type" Type="debt_lodgement_reimbursment" />
+      <Association Name="payment_type_master_lodgement_reimbursment" Member="master_lodgement_reimbursments" ThisKey="id" OtherKey="payment_type" Type="master_lodgement_reimbursment" />
+      <Association Name="payment_type_shop_lodgement_reimbursment" Member="shop_lodgement_reimbursments" ThisKey="id" OtherKey="payment_type" Type="shop_lodgement_reimbursment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentItem" Member="PaymentItems">
+    <Type Name="PaymentItem">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LeadBankCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LeadBankName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LeadBankCbnCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ItemAmount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="PaymentItem_PaymentNotificationRequest" Member="PaymentNotificationRequests" ThisKey="id" OtherKey="PaymentItem" Type="PaymentNotificationRequest" />
+      <Association Name="Item_PaymentItem" Member="Item1" ThisKey="Item" OtherKey="id" Type="Item" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PaymentNotificationRequest" Member="PaymentNotificationRequests">
+    <Type Name="PaymentNotificationRequest">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustReference" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentMethod" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PaymentReference" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OriginalPaymentName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OriginalPaymentReference" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ChannelName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Location" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InstitutionId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InstitutionName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BankName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CustomerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OtherCustomerInfo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PaymentLogId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalPaymentLogid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaymentCurrency" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaymentStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="BranchName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CollectionsAccount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BankCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DepositorName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerPhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustomerAddress" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="CategoryCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ThirdPartyCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceUsername" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FeeName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ServicePassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FTPUsername" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FTPPassword" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SettlementDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TerminalId" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="isReversal" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PaymentItem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="PaymentItem_PaymentNotificationRequest" Member="PaymentItem1" ThisKey="PaymentItem" OtherKey="id" Type="PaymentItem" IsForeignKey="true" />
+      <Association Name="shop_PaymentNotificationRequest" Member="shop" ThisKey="CustReference" OtherKey="id" Type="shop" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.report" Member="reports">
+    <Type Name="report">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="FileName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Invoker" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="datasource" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="selectableInfo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdditionalInfo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="showDatetab" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="showOwnershiptab" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="showAllTab" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="report_report" Member="report2" ThisKey="id" OtherKey="id" Type="report" Cardinality="One" />
+      <Association Name="report_report" Member="report1" ThisKey="id" OtherKey="id" Type="report" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sales_cal" Member="sales_cals">
+    <Type Name="sales_cal">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="month" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="divisor" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop" Member="shops">
+    <Type Name="shop">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop_code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shop_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shop_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="shop_ownership" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="agent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="state" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="local_govt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="credit_limit" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="join_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="is_bettingshop" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_onlinefunding" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isactive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="shopmanager_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="commission" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="shop_commission_balance" Member="commission_balances" ThisKey="id" OtherKey="shop" Type="commission_balance" />
+      <Association Name="shop_commission_lodgement_reimbursment" Member="commission_lodgement_reimbursments" ThisKey="id" OtherKey="shop" Type="commission_lodgement_reimbursment" />
+      <Association Name="shop_commission_transaction" Member="commission_transactions" ThisKey="id" OtherKey="shop" Type="commission_transaction" />
+      <Association Name="shop_master_balance_sheet" Member="master_balance_sheets" ThisKey="id" OtherKey="shop" Type="master_balance_sheet" />
+      <Association Name="shop_master_daily_sale" Member="master_daily_sales" ThisKey="id" OtherKey="shop" Type="master_daily_sale" />
+      <Association Name="shop_master_expense" Member="master_expenses" ThisKey="id" OtherKey="shop" Type="master_expense" />
+      <Association Name="shop_master_lodgement_reimbursment" Member="master_lodgement_reimbursments" ThisKey="id" OtherKey="shop" Type="master_lodgement_reimbursment" />
+      <Association Name="shop_master_luckyballs_sale" Member="master_luckyballs_sales" ThisKey="id" OtherKey="shop" Type="master_luckyballs_sale" />
+      <Association Name="shop_master_sb_sale" Member="master_sb_sales" ThisKey="id" OtherKey="shop" Type="master_sb_sale" />
+      <Association Name="shop_master_transaction" Member="master_transactions" ThisKey="id" OtherKey="shop" Type="master_transaction" />
+      <Association Name="shop_PaymentNotificationRequest" Member="PaymentNotificationRequests" ThisKey="id" OtherKey="CustReference" Type="PaymentNotificationRequest" />
+      <Association Name="shop_shop_balance_sheet" Member="shop_balance_sheets" ThisKey="id" OtherKey="shop" Type="shop_balance_sheet" />
+      <Association Name="shop_shop_daily_sale" Member="shop_daily_sales" ThisKey="id" OtherKey="shop" Type="shop_daily_sale" />
+      <Association Name="shop_shop_expense" Member="shop_expenses" ThisKey="id" OtherKey="shop" Type="shop_expense" />
+      <Association Name="shop_shop_transaction" Member="shop_transactions" ThisKey="id" OtherKey="shop" Type="shop_transaction" />
+      <Association Name="login_shop" Member="login" ThisKey="shopmanager_id" OtherKey="id" Type="login" IsForeignKey="true" />
+      <Association Name="shop_type_shop" Member="shop_type1" ThisKey="shop_type" OtherKey="id" Type="shop_type" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="state_list_shop" Member="state_list" ThisKey="state" OtherKey="id" Type="state_list" IsForeignKey="true" />
+      <Association Name="state_local_govt_shop" Member="state_local_govt" ThisKey="local_govt" OtherKey="id" Type="state_local_govt" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_balance_sheet" Member="shop_balance_sheets">
+    <Type Name="shop_balance_sheet">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sales_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="credit_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="online_credit" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="netbalance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="shop_shop_balance_sheet" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_credit" Member="shop_credits">
+    <Type Name="shop_credit">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[transaction]" Member="transaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance_before" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance_after" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="credit_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="credit_type_shop_credit" Member="credit_type1" ThisKey="credit_type" OtherKey="id" Type="credit_type" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="shop_transaction_shop_credit" Member="shop_transaction" ThisKey="transaction" OtherKey="id" Type="shop_transaction" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_daily_sales" Member="shop_daily_sales">
+    <Type Name="shop_daily_sale">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="stake" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="cancelled" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="date_posted" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="commision" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="shop_shop_daily_sale" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="login_shop_daily_sale" Member="login" ThisKey="posted_by" OtherKey="id" Type="login" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="shop_daily_sales_virtual_shop_daily_sale" Member="shop_daily_sales_virtual" ThisKey="id" OtherKey="id" Type="shop_daily_sales_virtual" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_daily_sales_virtuals" Member="shop_daily_sales_virtuals">
+    <Type Name="shop_daily_sales_virtual">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop_sales" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VHC_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VHC_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VHC_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VFL_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VFL_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VFL_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VDR_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VDR_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="VDR_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_sales" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_winnings" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="net_balance" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Association Name="shop_daily_sales_virtual_shop_daily_sale" Member="shop_daily_sale" ThisKey="id" OtherKey="id" Type="shop_daily_sale" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_expense" Member="shop_expenses">
+    <Type Name="shop_expense">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="expense_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="comment" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="shop_shop_expense" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="expenses_type_shop_expense" Member="expenses_type" ThisKey="expense_type" OtherKey="id" Type="expenses_type" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_lodgement_reimbursment" Member="shop_lodgement_reimbursments">
+    <Type Name="shop_lodgement_reimbursment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="from_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="to_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="weekno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="teller_number" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="[transaction]" Member="transaction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="isverified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="islocked" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="payment_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="bank_shop_lodgement_reimbursment" Member="bank1" ThisKey="bank" OtherKey="id" Type="bank" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="bank_list_shop_lodgement_reimbursment" Member="bank_list" ThisKey="bank" OtherKey="id" Type="bank_list" IsForeignKey="true" />
+      <Association Name="payment_type_shop_lodgement_reimbursment" Member="payment_type1" ThisKey="payment_type" OtherKey="id" Type="payment_type" IsForeignKey="true" />
+      <Association Name="shop_transaction_shop_lodgement_reimbursment" Member="shop_transaction" ThisKey="transaction" OtherKey="id" Type="shop_transaction" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_transaction" Member="shop_transactions">
+    <Type Name="shop_transaction">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shop" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trans_timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="trans_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance_before" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="balance_after" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="details" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="trans_category" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="posted_by" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="shop_transaction_shop_credit" Member="shop_credits" ThisKey="id" OtherKey="transaction" Type="shop_credit" />
+      <Association Name="shop_transaction_shop_lodgement_reimbursment" Member="shop_lodgement_reimbursments" ThisKey="id" OtherKey="transaction" Type="shop_lodgement_reimbursment" />
+      <Association Name="shop_shop_transaction" Member="shop1" ThisKey="shop" OtherKey="id" Type="shop" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="transaction_category_shop_transaction" Member="transaction_category" ThisKey="trans_category" OtherKey="id" Type="transaction_category" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="transaction_type_shop_transaction" Member="transaction_type" ThisKey="trans_type" OtherKey="id" Type="transaction_type" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shop_type" Member="shop_types">
+    <Type Name="shop_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="shop_type_shop" Member="shops" ThisKey="id" OtherKey="shop_type" Type="shop" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sms" Member="sms">
+    <Type Name="sm">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="subject" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="content" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="conclusion" Type="System.String" DbType="NChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="category" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sms_vendors" Member="sms_vendors">
+    <Type Name="sms_vendor">
+      <Column Name="vendor_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="vendor_url" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="sent_msgs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fail_msgs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="remaining_credits" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="expiry_date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.state_list" Member="state_lists">
+    <Type Name="state_list">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="state" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="state_list_shop" Member="shops" ThisKey="id" OtherKey="state" Type="shop" />
+      <Association Name="state_list_state_local_govt" Member="state_local_govts" ThisKey="id" OtherKey="state" Type="state_local_govt" />
+    </Type>
+  </Table>
+  <Table Name="dbo.state_local_govt" Member="state_local_govts">
+    <Type Name="state_local_govt">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="state" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="local_govt" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="state_local_govt_shop" Member="shops" ThisKey="id" OtherKey="local_govt" Type="shop" />
+      <Association Name="state_list_state_local_govt" Member="state_list" ThisKey="state" OtherKey="id" Type="state_list" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.transaction_category" Member="transaction_categories">
+    <Type Name="transaction_category">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="app_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="transaction_category_commission_transaction" Member="commission_transactions" ThisKey="id" OtherKey="trans_category" Type="commission_transaction" />
+      <Association Name="transaction_category_debt_lodgement_reimbursment" Member="debt_lodgement_reimbursments" ThisKey="id" OtherKey="transaction_category" Type="debt_lodgement_reimbursment" />
+      <Association Name="transaction_category_debt_transaction" Member="debt_transactions" ThisKey="id" OtherKey="trans_category" Type="debt_transaction" />
+      <Association Name="transaction_category_master_transaction" Member="master_transactions" ThisKey="id" OtherKey="trans_category" Type="master_transaction" />
+      <Association Name="transaction_category_shop_transaction" Member="shop_transactions" ThisKey="id" OtherKey="trans_category" Type="shop_transaction" />
+    </Type>
+  </Table>
+  <Table Name="dbo.transaction_type" Member="transaction_types">
+    <Type Name="transaction_type">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="App_id" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="transaction_type_commission_lodgement_reimbursment" Member="commission_lodgement_reimbursments" ThisKey="id" OtherKey="transaction_type" Type="commission_lodgement_reimbursment" />
+      <Association Name="transaction_type_debt_lodgement_reimbursment" Member="debt_lodgement_reimbursments" ThisKey="id" OtherKey="transaction_type" Type="debt_lodgement_reimbursment" />
+      <Association Name="transaction_type_master_lodgement_reimbursment" Member="master_lodgement_reimbursments" ThisKey="id" OtherKey="transaction_type" Type="master_lodgement_reimbursment" />
+      <Association Name="transaction_type_shop_transaction" Member="shop_transactions" ThisKey="id" OtherKey="trans_type" Type="shop_transaction" />
+    </Type>
+  </Table>
+</Database>
